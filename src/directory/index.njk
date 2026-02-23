@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Government Directory
+lang: en
+permalink: /directory/
+---
+<h1>Government Directory</h1>
+<p>Single source: <code>/data/gov-directory.json</code>.</p>
+
+<label for="directory-filter">Filter directory</label>
+<input id="directory-filter" type="search" placeholder="Type ministry, agency, service tag...">
+
+<div id="directory-results">
+  {% for entity in govDirectory %}
+  <article class="card" data-entry="{{ (entity.name + ' ' + entity.type + ' ' + (entity.tags | join(' '))) | lower }}">
+    <h2>{{ entity.name }}</h2>
+    <p><strong>Type:</strong> {{ entity.type }} {% if entity.parent %} · <strong>Parent:</strong> {{ entity.parent }}{% endif %}</p>
+    <p><a href="{{ entity.website }}">Website</a>{% if entity.services_url %} · <a href="{{ entity.services_url }}">Services</a>{% endif %}{% if entity.contacts_url %} · <a href="{{ entity.contacts_url }}">Contacts</a>{% endif %}</p>
+  </article>
+  {% endfor %}
+</div>
+
+<script defer src="/scripts/directory-filter.js"></script>

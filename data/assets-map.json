@@ -1,0 +1,18 @@
+{
+  "coat_of_arms": {
+    "primary": "https://www.zim.gov.zw/images/zimcoatofarms.png",
+    "fallback": [
+      "https://www.veritaszim.net/sites/veritas_d/files/coat_of_arms_zimbabwe.png"
+    ]
+  },
+  "zim_portal_wordmark": {
+    "primary": "https://www.zim.gov.zw/images/logo.png",
+    "fallback": []
+  },
+  "hero_citizen_services": {
+    "primary": "https://www.zim.gov.zw/sites/default/files/2023-11/services-banner.jpg",
+    "fallback": [
+      "https://www.zim.gov.zw/sites/default/files/default_images/banner-default.jpg"
+    ]
+  }
+}

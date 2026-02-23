@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+title: Safety & Security Directory
+lang: en
+permalink: /directory/safety-security/
+---
+<h1>Safety & Security entities</h1>
+{% set items = govDirectory | byTag('safety-security') %}
+<ul>
+{% for entity in items %}
+  <li><a href="{{ entity.website }}">{{ entity.name }}</a> ({{ entity.type }})</li>
+{% endfor %}
+</ul>

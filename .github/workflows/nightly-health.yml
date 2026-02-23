@@ -1,0 +1,41 @@
+name: Nightly Health Check
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - id: build
+        run: npm run build
+      - id: links
+        run: npm run check:links
+        continue-on-error: true
+      - id: assets
+        run: npm run check:assets
+        continue-on-error: true
+      - name: Write health result
+        run: |
+          if [ "${{ steps.links.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then
+            echo '{"ok":true,"links":"success","assets":"success"}' > health-results.json
+          else
+            echo '{"ok":false,"links":"${{ steps.links.outcome }}","assets":"${{ steps.assets.outcome }}"}' > health-results.json
+          fi
+      - name: Open issue when failed
+        if: steps.links.outcome != 'success' || steps.assets.outcome != 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/open-health-issue.mjs

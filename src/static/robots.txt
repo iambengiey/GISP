@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://example.gov.zw/sitemap.xml

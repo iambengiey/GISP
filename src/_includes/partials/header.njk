@@ -1,0 +1,37 @@
+<div class="top-strip" role="region" aria-label="Official site strip">
+  <div class="container">
+    <span>Official Government of Zimbabwe website · <a href="{{ site.portalUrl }}">zim.gov.zw</a></span>
+    <div class="top-links">
+      <a href="/directory/">Government Directory</a>
+      <a href="/accessibility/">Accessibility</a>
+      <a href="#site-search" aria-label="Search this website">Search</a>
+      <div class="language-switcher">
+        <label class="visually-hidden" for="lang-switch">Language</label>
+        <select id="lang-switch">
+          {% for l in languages %}
+          {% set target = page.url | replace('/' + page.lang + '/', '/' + l.code + '/') %}
+          <option value="{{ target }}" {% if page.lang == l.code %}selected{% endif %}>{{ l.native }}</option>
+          {% endfor %}
+        </select>
+      </div>
+          <button id="contrast-toggle" type="button">High contrast</button>
+    </div>
+  </div>
+</div>
+<header>
+  <div class="container">
+    <a href="/{{ page.lang or 'en' }}/" class="brand">
+      <span>{{ site.shortName }}</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/{{ page.lang or 'en' }}/services/">Services</a></li>
+        <li><a href="/{{ page.lang or 'en' }}/ministries/">Ministries & Entities</a></li>
+        <li><a href="/directory/">Government Directory</a></li>
+        <li><a href="/{{ page.lang or 'en' }}/standards/">Policies & Standards</a></li>
+        <li><a href="/{{ page.lang or 'en' }}/news/">News</a></li>
+        <li><a href="/{{ page.lang or 'en' }}/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
