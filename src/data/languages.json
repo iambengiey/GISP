@@ -1,0 +1,19 @@
+[
+  {"code":"en","name":"English","native":"English"},
+  {"code":"sn","name":"Shona","native":"chiShona"},
+  {"code":"nd","name":"Ndebele","native":"isiNdebele"},
+  {"code":"chewa","name":"Chewa","native":"Chichewa"},
+  {"code":"chibarwe","name":"Chibarwe","native":"Chibarwe"},
+  {"code":"kalanga","name":"Kalanga","native":"TjiKalanga"},
+  {"code":"khoisan","name":"Khoisan","native":"Tshwao"},
+  {"code":"nambya","name":"Nambya","native":"ChiNambya"},
+  {"code":"ndau","name":"Ndau","native":"ChiNdau"},
+  {"code":"ny","name":"Nyanja","native":"chiNyanja"},
+  {"code":"shangani","name":"Shangani","native":"Xitsonga"},
+  {"code":"sign","name":"Sign Language","native":"Zimbabwe Sign Language"},
+  {"code":"sotho","name":"Sotho","native":"Sesotho"},
+  {"code":"tonga","name":"Tonga","native":"chiTonga"},
+  {"code":"tswana","name":"Tswana","native":"Setswana"},
+  {"code":"venda","name":"Venda","native":"Tshivenda"},
+  {"code":"xhosa","name":"Xhosa","native":"isiXhosa"}
+]

@@ -1,0 +1,33 @@
+@import url('./tokens.css');
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-body); color: var(--govzw-text); background: var(--govzw-bg); line-height: 1.5; }
+a { color: #004a8f; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--govzw-focus); outline-offset: 2px; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: var(--space-3); top: var(--space-3); z-index: 1000; background: #fff; padding: var(--space-2); }
+.top-strip { background: var(--govzw-black); color: #fff; font-size: .92rem; }
+.container { width: min(100% - 2rem, var(--max-width)); margin-inline: auto; }
+.top-strip .container, header .container, footer .container { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.55rem 0; }
+.top-links { display:flex; gap:1rem; flex-wrap:wrap; }
+.top-links a { color:#fff; text-decoration:none; }
+header { background: var(--govzw-surface); border-bottom: 4px solid var(--govzw-green); }
+.brand { display:flex; gap: .75rem; align-items:center; font-weight:700; text-decoration:none; color:inherit; }
+nav ul { list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap: .85rem; }
+nav a { text-decoration:none; font-weight:600; }
+main { padding: var(--space-6) 0; }
+.hero { background: linear-gradient(135deg, #fff, #eef8f1); border-left: 5px solid var(--govzw-green); padding: var(--space-6); border-radius: var(--radius); }
+.grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+.card { background: #fff; padding: 1rem; border-radius: var(--radius); border:1px solid #e5e7eb; }
+footer { margin-top: var(--space-6); background: #0f172a; color: #d1d5db; }
+.footer-links { display:flex; gap:.8rem; flex-wrap:wrap; }
+.footer-links a { color:#f1f5f9; text-decoration:none; }
+.badge { font-size:.8rem; background:#e8f3ec; border:1px solid #bddcc7; padding:.15rem .5rem; border-radius:1rem; }
+.language-switcher select { min-height: 2rem; }
+.search-wrap { margin-block:1rem; }
+.table { width:100%; border-collapse: collapse; background:#fff; }
+.table th, .table td { border:1px solid #d1d5db; padding:.5rem; text-align:left; }
+.visually-hidden { position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip-path: inset(50%); }
+[data-theme='high-contrast'] { --govzw-bg:#000; --govzw-text:#fff; --govzw-surface:#111; }
+@media (max-width: 780px){
+  header .container { flex-direction:column; align-items:flex-start; }
+}

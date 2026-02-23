@@ -1,0 +1,8 @@
+accept = [200, 403, 429]
+timeout = 20
+max_concurrency = 8
+verbose = "info"
+exclude = [
+  "https://example.gov.zw",
+  "http://www.moha.gov.zw"
+]

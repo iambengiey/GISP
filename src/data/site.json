@@ -1,0 +1,11 @@
+{
+  "name": "Government Internet Service Provider",
+  "shortName": "GISP Zimbabwe",
+  "description": "Official Government Internet Service Provider for digital public services in Zimbabwe.",
+  "url": "https://example.gov.zw",
+  "portalUrl": "https://www.zim.gov.zw",
+  "contactEmail": "gisp@ict.gov.zw",
+  "securityEmail": "security@gisp.gov.zw",
+  "matomoEnabled": false,
+  "wcagTarget": "WCAG 2.2 AA"
+}

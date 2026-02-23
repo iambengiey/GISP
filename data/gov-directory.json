@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Office of the President and Cabinet",
+    "type": "Executive",
+    "parent": null,
+    "website": "https://www.opc.gov.zw",
+    "services_url": "https://www.zim.gov.zw",
+    "contacts_url": "https://www.opc.gov.zw/contact",
+    "tags": ["governance", "executive"]
+  },
+  {
+    "name": "Ministry of Home Affairs and Cultural Heritage",
+    "type": "Ministry",
+    "parent": "Office of the President and Cabinet",
+    "website": "http://www.moha.gov.zw",
+    "services_url": "https://www.zim.gov.zw/index.php/en/my-government/ministry-home-affairs-cultural-heritage",
+    "contacts_url": "https://www.zim.gov.zw/index.php/en/my-government/ministry-home-affairs-cultural-heritage",
+    "tags": ["safety-security", "identity"]
+  },
+  {
+    "name": "Zimbabwe Republic Police",
+    "type": "Agency",
+    "parent": "Ministry of Home Affairs and Cultural Heritage",
+    "website": "https://www.zrp.org.zw",
+    "services_url": "https://www.zrp.org.zw/index.php/services",
+    "contacts_url": "https://www.zrp.org.zw/index.php/contact-us",
+    "tags": ["safety-security"]
+  },
+  {
+    "name": "Department of Immigration",
+    "type": "Department",
+    "parent": "Ministry of Home Affairs and Cultural Heritage",
+    "website": "https://www.zimimmigration.gov.zw",
+    "services_url": "https://www.zimimmigration.gov.zw/index.php/services",
+    "contacts_url": "https://www.zimimmigration.gov.zw/index.php/contact",
+    "tags": ["travel", "identity"]
+  },
+  {
+    "name": "Zimbabwe Revenue Authority",
+    "type": "Agency",
+    "parent": "Ministry of Finance, Economic Development and Investment Promotion",
+    "website": "https://www.zimra.co.zw",
+    "services_url": "https://www.zimra.co.zw/services",
+    "contacts_url": "https://www.zimra.co.zw/contact-us",
+    "tags": ["tax-customs", "business"]
+  },
+  {
+    "name": "Public Service Commission",
+    "type": "Commission",
+    "parent": "Office of the President and Cabinet",
+    "website": "https://www.psc.gov.zw",
+    "services_url": "https://www.psc.gov.zw/services",
+    "contacts_url": "https://www.psc.gov.zw/contact",
+    "tags": ["public-service", "jobs"]
+  },
+  {
+    "name": "Ministry of Health and Child Care",
+    "type": "Ministry",
+    "parent": "Office of the President and Cabinet",
+    "website": "http://www.mohcc.gov.zw",
+    "services_url": "https://www.zim.gov.zw/index.php/en/my-government/ministry-health-child-care",
+    "contacts_url": "http://www.mohcc.gov.zw/index.php?option=com_contact",
+    "tags": ["health"]
+  },
+  {
+    "name": "Ministry of Primary and Secondary Education",
+    "type": "Ministry",
+    "parent": "Office of the President and Cabinet",
+    "website": "http://www.mopse.gov.zw",
+    "services_url": "https://www.zim.gov.zw/index.php/en/my-government/ministry-primary-and-secondary-education",
+    "contacts_url": "http://www.mopse.gov.zw/contact",
+    "tags": ["education"]
+  }
+]
